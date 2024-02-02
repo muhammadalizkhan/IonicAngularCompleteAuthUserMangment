@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">IonicAuth</string>
+    <string name="title_activity_main">IonicAuth</string>
+    <string name="package_name">io.ionic.auth</string>
+    <string name="custom_url_scheme">io.ionic.auth</string>
+</resources>
