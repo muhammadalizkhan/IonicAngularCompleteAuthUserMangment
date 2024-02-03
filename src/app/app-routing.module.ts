@@ -23,6 +23,14 @@ const routes: Routes = [
     path: 'forget-password',
     loadChildren: () => import('./authentication/forget-password/forget-password.module').then( m => m.ForgetPasswordPageModule)
   },
+  {
+    path: 'groups',
+    loadChildren: () => import('./authentication/groups/groups.module').then( m => m.GroupsPageModule)
+  },
+  {
+    path: 'message',
+    loadChildren: () => import('./authentication/message/message.module').then( m => m.MessagePageModule)
+  },
 ];
 
 @NgModule({
