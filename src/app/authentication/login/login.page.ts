@@ -12,7 +12,7 @@ import { LoadingController } from '@ionic/angular';
 export class LoginPage implements OnInit {
   credentials = this.fb.nonNullable.group({
     email: ['alikhan7847@gmail.com', Validators.required],
-    passoword: ['12345', Validators.required]
+    password: ['12345', Validators.required]
   });
 
   constructor(
@@ -20,10 +20,18 @@ export class LoginPage implements OnInit {
     private AuthService: AuthService,
     private loadingController: LoadingController,
     private router: Router
+  ){}
 
-  ) { }
+  get email() {
+    return this.credentials.controls.email;
+  }
+  get password() {
+    return this.credentials.controls.password;
+  }
+  ngOnInit() {}
 
-  ngOnInit() {
+  async login(){
+
   }
 
 }
